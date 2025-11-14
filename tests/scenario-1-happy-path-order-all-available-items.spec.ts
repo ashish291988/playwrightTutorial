@@ -18,7 +18,7 @@ test.describe('Scenario 1 — Happy path: Order all available items (E2E)', () =
     ]);
 
     // Add Sauce Labs Backpack to cart
-    await page.locator('[data-test="add-to-cart-sauce-labs-backpac"]').click();
+    await page.locator('[data-test="add-to-cart-sauce-labs-backpack"]').click();
 
     // Add Sauce Labs Bike Light to cart
     await page.locator('[data-test="add-to-cart-sauce-labs-bike-light"]').click();
