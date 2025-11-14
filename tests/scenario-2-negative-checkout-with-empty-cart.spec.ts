@@ -29,7 +29,7 @@ test.describe('Scenario 2 — Negative: Checkout with empty cart', () => {
     await page.goto('https://www.saucedemo.com/cart.html');
 
   // Attempt to click checkout button with empty cart
-  await page.locator('[data-test="checkou"]').click();
+  await page.locator('[data-test="checkout"]').click();
 
     // Assert that the checkout page is shown
     await expect(page).toHaveURL(/.*checkout-step-one.html/);
