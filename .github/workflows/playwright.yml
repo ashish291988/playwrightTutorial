@@ -22,7 +22,6 @@ jobs:
     - name: Print CPU count
       run: |
         echo "Logical CPUs: $(nproc --all)"
-        echo "Playwright default workers = $(node -e \"console.log(require('os').cpus().length/2)\")" 
     - name: Run Playwright tests
       run: xvfb-run npx playwright test
     - name: Upload Playwright HTML report  
